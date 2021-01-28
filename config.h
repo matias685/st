@@ -5,7 +5,14 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=19:antialias=true:autohint=true";
+static char *font = "Jetbrains Mono:pixelsize=18:antialias=true:autohint=true";
+/* Spare fonts */
+static char *font2[] = {
+	"Droid Sans Mono:style=Regular:pixelsize=18:antialias=true:autohint=true",
+	"Inconsolata for Powerline:pixelsize=18:antialias=true:autohint=true",
+	"Hack Nerd Font Mono:pixelsize=18:antialias=true:autohint=true",
+};
+
 static int borderpx = 2;
 
 /*
