@@ -5,12 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Jetbrains Mono:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Hack Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Droid Sans Mono:style=Regular:pixelsize=18:antialias=true:autohint=true",
-	"Inconsolata for Powerline:pixelsize=18:antialias=true:autohint=true",
-	"Hack Nerd Font Mono:pixelsize=18:antialias=true:autohint=true",
+	"Inconsolata for Powerline:pixelsize=18:antialias=true:autohint=true", 
+/*	"Hack Nerd Font Mono:pixelsize=18:antialias=true:autohint=true", */
 };
 
 static int borderpx = 2;
@@ -102,6 +101,7 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+	/* 8 normal colors */
 	"#313539", /* black	*/
 	"#b02626", /* red	*/
 	"#40a62f", /* green	*/
@@ -124,8 +124,8 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#191919", /* background */
-	"#d8dee9", /* foregound  */
+	"#191919",
+	"#d8dee9",
 };
 
 
