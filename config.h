@@ -1,4 +1,4 @@
-/* See LICENSE file for copyright and license details. */
+
 
 /*
  * appearance
@@ -8,8 +8,8 @@
 static char *font = "Hack:style=Regular:pixelsize=18:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"FontAwesome:style=Regular:pixelsize=18:antialias=true:autohint=true", 
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+	"FontAwesome:style=Regular:pixelsize=18:antialias=true:autohint=true", // Powerline 
+    "Noto Color Emoji:style=Regular:pixelsize18:antialias=true:autohint=true" // Unicode
 };
 
 static int borderpx = 2;
@@ -98,6 +98,9 @@ char *termname = "st-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 8;
+
+/* bg opacity */
+float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
